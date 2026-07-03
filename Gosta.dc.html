@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#F2EEE7;color:#1A1714;font-family:'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  ::selection{background:#A97B3C;color:#fff}
+  a{color:inherit}
+  input,button,textarea{font-family:inherit}
+  iframe{border:0}
+  image-slot{display:block}
+  @keyframes gShine{0%{transform:translateX(-120%)}60%,100%{transform:translateX(220%)}}
+</style>
+</helmet>
+
+<div id="top" style="overflow:hidden">
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(242,238,231,0.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(26,23,20,0.08)">
+  <div style="max-width:1200px;margin:0 auto;padding:15px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="#top" style="display:flex;align-items:baseline;gap:9px;text-decoration:none">
+      <span style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:27px;letter-spacing:0.02em">GOSTA</span>
+      <span style="font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:#8A8175;font-weight:700;padding-bottom:3px">Потолки</span>
+    </a>
+    <nav style="display:flex;gap:30px;font-size:13.5px;font-weight:600;color:#413B33">
+      <a href="#kalkulyator" style="text-decoration:none" style-hover="color:#A97B3C">Калькулятор</a>
+      <a href="#vidy" style="text-decoration:none" style-hover="color:#A97B3C">Виды потолков</a>
+      <a href="#raboty" style="text-decoration:none" style-hover="color:#A97B3C">Работы</a>
+      <a href="#otzyvy" style="text-decoration:none" style-hover="color:#A97B3C">Отзывы</a>
+      <a href="#kontakty" style="text-decoration:none" style-hover="color:#A97B3C">Контакты</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:16px">
+      <a href="tel:+79882919183" style="font-weight:700;font-size:14.5px;text-decoration:none;white-space:nowrap;letter-spacing:0.01em">+7 988 291-91-83</a>
+      <a href="https://wa.me/79882919183" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;background:#1A1714;color:#F2EEE7;text-decoration:none;font-weight:700;font-size:13.5px;padding:10px 17px;border-radius:100px;transition:.18s" style-hover="background:#A97B3C">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.13.1-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.15-.19-1.19-1.58-1.19-3.02 0-1.43.75-2.14 1.02-2.43.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.83 2.01.9 2.16.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.28-.12.56.16.29.72 1.18 1.54 1.91 1.06.95 1.95 1.24 2.24 1.38.29.14.45.12.62-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.68-.17 1.36z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section style="max-width:1200px;margin:0 auto;padding:70px 32px 40px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:56px;align-items:center">
+  <div>
+    <div style="display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#A97B3C;margin-bottom:26px">
+      <span style="width:26px;height:1px;background:#A97B3C;display:inline-block"></span>
+      Натяжные потолки · Махачкала
+    </div>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:66px;line-height:1.02;letter-spacing:-0.01em;margin:0 0 22px">Ровный потолок.<br>Чистый монтаж.<br><span style="font-style:italic;color:#A97B3C">За один день.</span></h1>
+    <p style="font-size:17.5px;line-height:1.6;color:#524B41;max-width:480px;margin:0 0 34px">Немецкие и французские полотна, гарантия 15 лет и цена, зафиксированная в договоре. Рассчитайте стоимость своего потолка за минуту.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+      <a href="#kalkulyator" style="display:inline-flex;align-items:center;gap:10px;background:#A97B3C;color:#fff;text-decoration:none;font-weight:700;font-size:15.5px;padding:16px 26px;border-radius:100px;box-shadow:0 10px 26px rgba(169,123,60,0.32);transition:.18s" style-hover="background:#8A6229;transform:translateY(-2px)">Рассчитать стоимость →</a>
+      <a href="#zayavka" style="display:inline-flex;align-items:center;font-weight:700;font-size:15.5px;padding:16px 24px;border-radius:100px;text-decoration:none;border:1.5px solid rgba(26,23,20,0.18);transition:.18s" style-hover="border-color:#1A1714;background:#1A1714;color:#F2EEE7">Бесплатный замер</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:26px;margin-top:40px">
+      <div style="display:flex;align-items:center;gap:11px">
+        <div style="display:flex;gap:2px;color:#A97B3C;font-size:16px">★★★★★</div>
+        <div style="font-size:13.5px;line-height:1.3;color:#524B41"><b style="color:#1A1714">5,0</b> · 26 отзывов<br>на Яндекс, Google и 2ГИС</div>
+      </div>
+      <div style="width:1px;height:38px;background:rgba(26,23,20,0.14)"></div>
+      <div style="font-size:13.5px;line-height:1.3;color:#524B41"><b style="color:#1A1714;font-size:15px">500+</b> потолков<br>с 2016 года</div>
+    </div>
+  </div>
+  <div style="position:relative">
+    <image-slot id="gosta-hero" style="width:100%;height:520px" shape="rounded" radius="22" src="https://t4.ftcdn.net/jpg/00/93/67/43/1000_F_93674310_U9PYYS8BRWTFKhiR6kYLSqKVQw5nlzV5.jpg" placeholder="Перетащите сюда фото готового потолка"></image-slot>
+    <div style="position:absolute;left:-22px;bottom:34px;background:#F2EEE7;border:1px solid rgba(26,23,20,0.1);border-radius:16px;padding:16px 20px;box-shadow:0 18px 40px rgba(26,23,20,0.14);display:flex;align-items:center;gap:14px">
+      <div style="width:44px;height:44px;border-radius:12px;background:#A97B3C;color:#fff;display:flex;align-items:center;justify-content:center">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <div><div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;line-height:1">15 лет</div><div style="font-size:12px;color:#6E675C;font-weight:600">официальной гарантии</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRUST STRIP ===================== -->
+<section style="border-top:1px solid rgba(26,23,20,0.08);border-bottom:1px solid rgba(26,23,20,0.08);background:#EFEAE1">
+  <div style="max-width:1200px;margin:0 auto;padding:26px 32px;display:grid;grid-template-columns:repeat(4,1fr);gap:22px">
+    <div style="display:flex;align-items:center;gap:13px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A97B3C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V5z"/></svg><div style="font-size:13.5px;font-weight:600;line-height:1.3">Гарантия<br>15 лет</div></div>
+    <div style="display:flex;align-items:center;gap:13px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A97B3C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div style="font-size:13.5px;font-weight:600;line-height:1.3">Монтаж<br>за 1 день</div></div>
+    <div style="display:flex;align-items:center;gap:13px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A97B3C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V9l6-4 6 4v12M10 13h4M10 17h4"/></svg><div style="font-size:13.5px;font-weight:600;line-height:1.3">Замер<br>бесплатно</div></div>
+    <div style="display:flex;align-items:center;gap:13px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A97B3C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg><div style="font-size:13.5px;font-weight:600;line-height:1.3">Полотна<br>Германия · Франция</div></div>
+  </div>
+</section>
+
+<!-- ===================== CALCULATOR ===================== -->
+<section id="kalkulyator" style="max-width:1200px;margin:0 auto;padding:96px 32px 60px">
+  <div style="text-align:center;max-width:660px;margin:0 auto 46px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#A97B3C;margin-bottom:14px">Калькулятор стоимости</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:48px;line-height:1.05;margin:0 0 14px">Узнайте цену за минуту</h2>
+    <p style="font-size:16px;color:#524B41;line-height:1.55;margin:0">Двигайте площадь, выбирайте полотно и опции — стоимость пересчитывается сразу. Итог предварительный; точную цену закрепим после бесплатного замера.</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1.35fr 0.9fr;gap:34px;align-items:start">
+
+    <!-- CONTROLS -->
+    <div style="background:#FBF8F3;border:1px solid rgba(26,23,20,0.1);border-radius:22px;padding:32px 32px 30px">
+
+      <!-- Площадь -->
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px">
+        <label style="font-size:15px;font-weight:700">Площадь помещения</label>
+        <div style="display:flex;align-items:baseline;gap:6px"><input type="number" min="1" max="500" value="{{ area }}" onChange="{{ onArea }}" onInput="{{ onArea }}" style="width:74px;font-size:20px;font-weight:700;text-align:right;border:none;background:transparent;color:#1A1714;font-family:'Cormorant Garamond',serif" /><span style="font-size:15px;color:#6E675C;font-weight:600">м²</span></div>
+      </div>
+      <input type="range" min="5" max="200" step="1" value="{{ area }}" onInput="{{ onArea }}" style="width:100%;accent-color:#A97B3C;height:4px" />
+      <div style="display:flex;justify-content:space-between;font-size:11.5px;color:#9A9184;font-weight:600;margin-top:6px">
+        <span>5 м²</span><span>200 м²</span>
+      </div>
+
+      <div style="height:1px;background:rgba(26,23,20,0.09);margin:28px 0"></div>
+
+      <!-- Тип полотна -->
+      <label style="font-size:15px;font-weight:700;display:block;margin-bottom:14px">Тип полотна</label>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px">
+        <sc-for list="{{ types }}" as="t" hint-placeholder-count="4">
+          <button onClick="{{ t.onClick }}" style="position:relative;text-align:left;cursor:pointer;background:#fff;border:1.5px solid rgba(26,23,20,0.12);border-radius:14px;padding:15px 16px 14px;transition:.16s;display:flex;flex-direction:column;gap:3px" style-hover="border-color:#A97B3C">
+            <span style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;line-height:1">{{ t.name }}</span>
+            <span style="font-size:12px;color:#6E675C;font-weight:700;letter-spacing:0.01em">{{ t.price }}</span>
+            <sc-if value="{{ t.active }}">
+              <span style="position:absolute;inset:0;border:2px solid #A97B3C;border-radius:14px;pointer-events:none"></span>
+            </sc-if>
+            <sc-if value="{{ t.active }}">
+              <span style="position:absolute;top:11px;right:11px;width:19px;height:19px;border-radius:50%;background:#A97B3C;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center">✓</span>
+            </sc-if>
+          </button>
+        </sc-for>
+      </div>
+
+      <div style="height:1px;background:rgba(26,23,20,0.09);margin:28px 0"></div>
+
+      <!-- Уровни -->
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px">
+        <div><div style="font-size:15px;font-weight:700">Количество уровней</div><div style="font-size:12.5px;color:#8A8175;margin-top:2px">Второй уровень — сложные формы и подсветка</div></div>
+        <div style="display:flex;background:#EDE7DD;border-radius:100px;padding:4px">
+          <button onClick="{{ setLevel1 }}" style="{{ lvl1Style }}">1 уровень</button>
+          <button onClick="{{ setLevel2 }}" style="{{ lvl2Style }}">2 уровня</button>
+        </div>
+      </div>
+
+      <!-- Steppers -->
+      <div style="display:flex;flex-direction:column;gap:2px">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:15px 0;border-top:1px solid rgba(26,23,20,0.08)">
+          <div><div style="font-size:14.5px;font-weight:700">Точечные светильники</div><div style="font-size:12.5px;color:#8A8175;margin-top:1px">Врезка и обвод под каждый светильник</div></div>
+          <div style="display:flex;align-items:center;gap:14px">
+            <button onClick="{{ decLights }}" style="width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(26,23,20,0.16);background:transparent;font-size:19px;cursor:pointer;line-height:1;transition:.15s" style-hover="border-color:#A97B3C;color:#A97B3C">−</button>
+            <span style="min-width:26px;text-align:center;font-size:17px;font-weight:700">{{ lights }}</span>
+            <button onClick="{{ incLights }}" style="width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(26,23,20,0.16);background:transparent;font-size:19px;cursor:pointer;line-height:1;transition:.15s" style-hover="border-color:#A97B3C;color:#A97B3C">+</button>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:15px 0;border-top:1px solid rgba(26,23,20,0.08)">
+          <div><div style="font-size:14.5px;font-weight:700">Люстры</div><div style="font-size:12.5px;color:#8A8175;margin-top:1px">Закладная под крепление</div></div>
+          <div style="display:flex;align-items:center;gap:14px">
+            <button onClick="{{ decChand }}" style="width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(26,23,20,0.16);background:transparent;font-size:19px;cursor:pointer;line-height:1;transition:.15s" style-hover="border-color:#A97B3C;color:#A97B3C">−</button>
+            <span style="min-width:26px;text-align:center;font-size:17px;font-weight:700">{{ chandelier }}</span>
+            <button onClick="{{ incChand }}" style="width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(26,23,20,0.16);background:transparent;font-size:19px;cursor:pointer;line-height:1;transition:.15s" style-hover="border-color:#A97B3C;color:#A97B3C">+</button>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:15px 0;border-top:1px solid rgba(26,23,20,0.08)">
+          <div><div style="font-size:14.5px;font-weight:700">Обвод труб</div><div style="font-size:12.5px;color:#8A8175;margin-top:1px">Обход стояков отопления</div></div>
+          <div style="display:flex;align-items:center;gap:14px">
+            <button onClick="{{ decPipes }}" style="width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(26,23,20,0.16);background:transparent;font-size:19px;cursor:pointer;line-height:1;transition:.15s" style-hover="border-color:#A97B3C;color:#A97B3C">−</button>
+            <span style="min-width:26px;text-align:center;font-size:17px;font-weight:700">{{ pipes }}</span>
+            <button onClick="{{ incPipes }}" style="width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(26,23,20,0.16);background:transparent;font-size:19px;cursor:pointer;line-height:1;transition:.15s" style-hover="border-color:#A97B3C;color:#A97B3C">+</button>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:15px 0;border-top:1px solid rgba(26,23,20,0.08)">
+          <div><div style="font-size:14.5px;font-weight:700">Ниша под карниз, м</div><div style="font-size:12.5px;color:#8A8175;margin-top:1px">Скрытый карниз для штор</div></div>
+          <div style="display:flex;align-items:center;gap:14px">
+            <button onClick="{{ decNiche }}" style="width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(26,23,20,0.16);background:transparent;font-size:19px;cursor:pointer;line-height:1;transition:.15s" style-hover="border-color:#A97B3C;color:#A97B3C">−</button>
+            <span style="min-width:26px;text-align:center;font-size:17px;font-weight:700">{{ niche }}</span>
+            <button onClick="{{ incNiche }}" style="width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(26,23,20,0.16);background:transparent;font-size:19px;cursor:pointer;line-height:1;transition:.15s" style-hover="border-color:#A97B3C;color:#A97B3C">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESULT -->
+    <aside style="position:sticky;top:88px;background:#1A1714;color:#EDE7DD;border-radius:22px;padding:32px 30px;box-shadow:0 24px 50px rgba(26,23,20,0.28);overflow:hidden">
+      <div style="position:relative;overflow:hidden">
+        <span style="position:absolute;top:0;left:0;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(169,123,60,0.18),transparent);animation:gShine 4.5s ease-in-out infinite"></span>
+        <div style="font-size:12.5px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#A97B3C;margin-bottom:8px">Предварительная стоимость</div>
+        <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:4px"><span style="font-size:16px;color:#9A9184">от</span><span style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;line-height:1;letter-spacing:-0.01em">{{ totalStr }}</span><span style="font-size:22px;font-weight:600;color:#C9BFAE">₽</span></div>
+        <div style="font-size:13px;color:#9A9184;margin-bottom:22px">≈ {{ perM2Str }} ₽ за м² «под ключ»</div>
+      </div>
+      <div style="border-top:1px solid rgba(237,231,221,0.14);padding-top:18px;display:flex;flex-direction:column;gap:11px;font-size:13.5px">
+        <div style="display:flex;justify-content:space-between;gap:12px"><span style="color:#B4AB9C">{{ typeName }}, {{ area }} м²{{ lvlNote }}</span><span style="font-weight:700;white-space:nowrap">{{ baseStr }} ₽</span></div>
+        <sc-if value="{{ hasLights }}"><div style="display:flex;justify-content:space-between;gap:12px"><span style="color:#B4AB9C">Светильники × {{ lights }}</span><span style="font-weight:700;white-space:nowrap">{{ lightsStr }} ₽</span></div></sc-if>
+        <sc-if value="{{ hasChand }}"><div style="display:flex;justify-content:space-between;gap:12px"><span style="color:#B4AB9C">Люстры × {{ chandelier }}</span><span style="font-weight:700;white-space:nowrap">{{ chandStr }} ₽</span></div></sc-if>
+        <sc-if value="{{ hasPipes }}"><div style="display:flex;justify-content:space-between;gap:12px"><span style="color:#B4AB9C">Обвод труб × {{ pipes }}</span><span style="font-weight:700;white-space:nowrap">{{ pipesStr }} ₽</span></div></sc-if>
+        <sc-if value="{{ hasNiche }}"><div style="display:flex;justify-content:space-between;gap:12px"><span style="color:#B4AB9C">Ниша под карниз, {{ niche }} м</span><span style="font-weight:700;white-space:nowrap">{{ nicheStr }} ₽</span></div></sc-if>
+      </div>
+      <a href="{{ waCalc }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:9px;background:#A97B3C;color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:15px;border-radius:100px;margin-top:24px;transition:.18s" style-hover="background:#C08E48">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.13.1-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.15-.19-1.19-1.58-1.19-3.02 0-1.43.75-2.14 1.02-2.43.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.83 2.01.9 2.16.07.14.12.31.02.5-.34.68-.7.65-.42.98.82.97 1.68 1.28 2.24 1.56.29.14.45.12.62-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.68-.17 1.36z"/></svg>
+        Отправить расчёт в WhatsApp
+      </a>
+      <a href="#zayavka" style="display:flex;align-items:center;justify-content:center;text-decoration:none;color:#EDE7DD;font-weight:600;font-size:13.5px;padding:12px;margin-top:8px" style-hover="color:#fff">или закажите бесплатный замер →</a>
+    </aside>
+  </div>
+</section>
+
+<!-- ===================== ВИДЫ ===================== -->
+<section id="vidy" style="max-width:1200px;margin:0 auto;padding:70px 32px">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px;flex-wrap:wrap">
+    <div>
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#A97B3C;margin-bottom:14px">Виды и фактуры</div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:48px;line-height:1.05;margin:0">Подберём под ваш интерьер</h2>
+    </div>
+    <p style="font-size:15px;color:#524B41;line-height:1.55;max-width:340px;margin:0">Более 150 оттенков, любые фактуры и фотопечать. Ниже — базовые направления и цены за м².</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px">
+    <div style="background:#FBF8F3;border:1px solid rgba(26,23,20,0.1);border-radius:18px;overflow:hidden;display:flex;flex-direction:column">
+      <div style="height:150px;background:linear-gradient(150deg,#EDE6D8,#D8CBB4)"></div>
+      <div style="padding:20px 20px 22px"><div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;margin-bottom:6px">Матовое</div><p style="font-size:13px;color:#6E675C;line-height:1.5;margin:0 0 14px">Классика без бликов. Выглядит как идеально окрашенный потолок.</p><div style="font-size:13px;font-weight:700;color:#A97B3C">от {{ pMatte }} ₽/м²</div></div>
+    </div>
+    <div style="background:#FBF8F3;border:1px solid rgba(26,23,20,0.1);border-radius:18px;overflow:hidden;display:flex;flex-direction:column">
+      <div style="height:150px;background:linear-gradient(150deg,#E7E0D2,#C9BCA3)"></div>
+      <div style="padding:20px 20px 22px"><div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;margin-bottom:6px">Сатиновое</div><p style="font-size:13px;color:#6E675C;line-height:1.5;margin:0 0 14px">Мягкий перламутровый отблеск. Тёплый свет, уютная спальня.</p><div style="font-size:13px;font-weight:700;color:#A97B3C">от {{ pSatin }} ₽/м²</div></div>
+    </div>
+    <div style="background:#FBF8F3;border:1px solid rgba(26,23,20,0.1);border-radius:18px;overflow:hidden;display:flex;flex-direction:column">
+      <div style="height:150px;background:linear-gradient(150deg,#DCE1E4,#A9B4BC)"></div>
+      <div style="padding:20px 20px 22px"><div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;margin-bottom:6px">Глянцевое</div><p style="font-size:13px;color:#6E675C;line-height:1.5;margin:0 0 14px">Зеркальный эффект, зрительно поднимает потолок. Больше света.</p><div style="font-size:13px;font-weight:700;color:#A97B3C">от {{ pGlossy }} ₽/м²</div></div>
+    </div>
+    <div style="background:#FBF8F3;border:1px solid rgba(26,23,20,0.1);border-radius:18px;overflow:hidden;display:flex;flex-direction:column">
+      <div style="height:150px;background:linear-gradient(150deg,#E9D9C4,#B98F63)"></div>
+      <div style="padding:20px 20px 22px"><div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;margin-bottom:6px">Фотопечать</div><p style="font-size:13px;color:#6E675C;line-height:1.5;margin:0 0 14px">Любое изображение в высоком разрешении — небо, узор, арт.</p><div style="font-size:13px;font-weight:700;color:#A97B3C">от {{ pPhoto }} ₽/м²</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== О НАС + ПРЕИМУЩЕСТВА ===================== -->
+<section id="o-nas" style="background:#1A1714;color:#EDE7DD">
+  <div style="max-width:1200px;margin:0 auto;padding:88px 32px;display:grid;grid-template-columns:0.9fr 1.1fr;gap:64px;align-items:center">
+    <div>
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#A97B3C;margin-bottom:16px">О компании Gosta</div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:44px;line-height:1.12;margin:0 0 22px">Делаем потолки в Дагестане с 2016 года</h2>
+      <p style="font-size:16px;line-height:1.7;color:#C4BBAC;margin:0 0 18px">Gosta — мастерская натяжных потолков в Махачкале. Устанавливаем потолки в квартирах, частных домах и коммерческих помещениях. Работаем на сертифицированных немецких и французских полотнах.</p>
+      <p style="font-size:16px;line-height:1.7;color:#C4BBAC;margin:0 0 30px">Мы держим цену, зафиксированную в договоре, и отвечаем за результат гарантией на 15 лет. Средняя оценка наших клиентов на картах — 5,0.</p>
+      <a href="#zayavka" style="display:inline-flex;align-items:center;gap:9px;background:#A97B3C;color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:15px 24px;border-radius:100px;transition:.18s" style-hover="background:#C08E48">Обсудить проект →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px">
+      <div style="border:1px solid rgba(237,231,221,0.14);border-radius:16px;padding:24px"><div style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;color:#A97B3C;line-height:1">15 лет</div><div style="font-size:13.5px;color:#B4AB9C;margin-top:6px">гарантия на полотно и монтаж</div></div>
+      <div style="border:1px solid rgba(237,231,221,0.14);border-radius:16px;padding:24px"><div style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;color:#A97B3C;line-height:1">1 день</div><div style="font-size:13.5px;color:#B4AB9C;margin-top:6px">на монтаж без грязи и пыли</div></div>
+      <div style="border:1px solid rgba(237,231,221,0.14);border-radius:16px;padding:24px"><div style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;color:#A97B3C;line-height:1">500+</div><div style="font-size:13.5px;color:#B4AB9C;margin-top:6px">потолков установлено с 2016 г.</div></div>
+      <div style="border:1px solid rgba(237,231,221,0.14);border-radius:16px;padding:24px"><div style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;color:#A97B3C;line-height:1">5,0 ★</div><div style="font-size:13.5px;color:#B4AB9C;margin-top:6px">рейтинг на Яндекс, Google, 2ГИС</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ГАЛЕРЕЯ ===================== -->
+<section id="raboty" style="max-width:1200px;margin:0 auto;padding:88px 32px">
+  <div style="text-align:center;max-width:600px;margin:0 auto 42px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#A97B3C;margin-bottom:14px">Наши работы</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:48px;line-height:1.05;margin:0 0 12px">Галерея готовых объектов</h2>
+    <p style="font-size:15px;color:#524B41;line-height:1.55;margin:0">Перетащите свои фото в любую ячейку — они сохранятся. Ниже подписи-подсказки, что показать.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+    <div><image-slot id="gosta-g1" style="width:100%;height:250px" shape="rounded" radius="16" src="https://t4.ftcdn.net/jpg/03/74/66/21/1000_F_374662176_Q04a7OHHFE2pYTyLKESyET7lxmEV7WHN.jpg" placeholder="Глянцевый потолок в гостиной"></image-slot><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Глянцевый · гостиная</div></div>
+    <div><image-slot id="gosta-g2" style="width:100%;height:250px" shape="rounded" radius="16" src="https://t3.ftcdn.net/jpg/03/72/40/40/1000_F_372404058_N4XsJtMQuORsoOLNGTvXPxYMObQrjQ0x.jpg" placeholder="Матовый потолок в спальне"></image-slot><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Матовый · спальня</div></div>
+    <div><image-slot id="gosta-g3" style="width:100%;height:250px" shape="rounded" radius="16" src="https://t4.ftcdn.net/jpg/03/07/61/03/1000_F_307610378_ZJVCiTE15Y3KxbfWmFD4YantEYYi3dxT.jpg" placeholder="Звёздное небо с подсветкой"></image-slot><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Звёздное небо · детская</div></div>
+    <div><image-slot id="gosta-g4" style="width:100%;height:250px" shape="rounded" radius="16" src="https://t4.ftcdn.net/jpg/04/03/01/55/1000_F_403015545_KiULyHIB7W8tAKbFfw3xVJ6st2q2wSC7.jpg" placeholder="Двухуровневый потолок"></image-slot><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Двухуровневый · зал</div></div>
+    <div><image-slot id="gosta-g5" style="width:100%;height:250px" shape="rounded" radius="16" src="https://t4.ftcdn.net/jpg/05/31/68/47/1000_F_531684784_zaT8et5N5cuvoY0RpWMMK9WfOLVwKpDr.jpg" placeholder="Парящий потолок с LED-подсветкой"></image-slot><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Парящий потолок · LED</div></div>
+    <div><image-slot id="gosta-g6" style="width:100%;height:250px" shape="rounded" radius="16" src="https://t3.ftcdn.net/jpg/04/92/44/52/1000_F_492445295_ruHE9wAI9L2UAEOPHa7LbJe38kQEthFz.jpg" placeholder="Фотопечать на потолке"></image-slot><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Фотопечать · кухня</div></div>
+  </div>
+</section>
+
+<!-- ===================== ЭТАПЫ ===================== -->
+<section id="etapy" style="background:#EFEAE1;border-top:1px solid rgba(26,23,20,0.08);border-bottom:1px solid rgba(26,23,20,0.08)">
+  <div style="max-width:1200px;margin:0 auto;padding:82px 32px">
+    <div style="text-align:center;margin-bottom:46px">
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#A97B3C;margin-bottom:14px">Как мы работаем</div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:48px;line-height:1.05;margin:0">Четыре шага до нового потолка</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px">
+      <div><div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;color:#CDB88F;line-height:1;margin-bottom:14px">01</div><div style="font-size:18px;font-weight:700;margin-bottom:8px">Заявка и замер</div><p style="font-size:13.5px;color:#6E675C;line-height:1.55;margin:0">Приедем в удобное время, замерим и рассчитаем точную стоимость. Бесплатно.</p></div>
+      <div><div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;color:#CDB88F;line-height:1;margin-bottom:14px">02</div><div style="font-size:18px;font-weight:700;margin-bottom:8px">Выбор полотна</div><p style="font-size:13.5px;color:#6E675C;line-height:1.55;margin:0">Подберём фактуру, цвет и сценарий освещения под ваш интерьер.</p></div>
+      <div><div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;color:#CDB88F;line-height:1;margin-bottom:14px">03</div><div style="font-size:18px;font-weight:700;margin-bottom:8px">Монтаж за 1 день</div><p style="font-size:13.5px;color:#6E675C;line-height:1.55;margin:0">Устанавливаем чисто и быстро — без пыли, мусора и лишних хлопот.</p></div>
+      <div><div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;color:#CDB88F;line-height:1;margin-bottom:14px">04</div><div style="font-size:18px;font-weight:700;margin-bottom:8px">Приёмка и гарантия</div><p style="font-size:13.5px;color:#6E675C;line-height:1.55;margin:0">Принимаете работу и получаете официальную гарантию на 15 лет.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ОТЗЫВЫ ===================== -->
+<section id="otzyvy" style="max-width:1200px;margin:0 auto;padding:88px 32px">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px;flex-wrap:wrap">
+    <div>
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#A97B3C;margin-bottom:14px">Отзывы клиентов</div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:48px;line-height:1.05;margin:0">Нам ставят 5,0 из 5</h2>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;background:#FBF8F3;border:1px solid rgba(26,23,20,0.1);border-radius:14px;padding:14px 20px">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:700;color:#A97B3C;line-height:1">5,0</div>
+      <div><div style="color:#A97B3C;font-size:14px">★★★★★</div><div style="font-size:12.5px;color:#6E675C;font-weight:600">26 отзывов на картах</div></div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+    <div style="background:#FBF8F3;border:1px solid rgba(26,23,20,0.1);border-radius:18px;padding:26px">
+      <div style="color:#A97B3C;font-size:15px;margin-bottom:14px">★★★★★</div>
+      <p style="font-size:15px;line-height:1.6;margin:0 0 20px;color:#332E28">«Самые внимательные мастера, с профессиональным инструментом и в короткие сроки. Если натяжной потолок — то Gosta, всем советую!»</p>
+      <div style="display:flex;align-items:center;gap:12px"><div style="width:38px;height:38px;border-radius:50%;background:#E3D8C4;display:flex;align-items:center;justify-content:center;font-weight:700;color:#8A6229">Р</div><div><div style="font-size:14px;font-weight:700">Рустам Сахавов</div><div style="font-size:12px;color:#8A8175">Google Карты</div></div></div>
+    </div>
+    <div style="background:#FBF8F3;border:1px solid rgba(26,23,20,0.1);border-radius:18px;padding:26px">
+      <div style="color:#A97B3C;font-size:15px;margin-bottom:14px">★★★★★</div>
+      <p style="font-size:15px;line-height:1.6;margin:0 0 20px;color:#332E28">«Отличные натяжные потолки, качественно и в обещанный срок. Спасибо за работу!»</p>
+      <div style="display:flex;align-items:center;gap:12px"><div style="width:38px;height:38px;border-radius:50%;background:#E3D8C4;display:flex;align-items:center;justify-content:center;font-weight:700;color:#8A6229">М</div><div><div style="font-size:14px;font-weight:700">Мухтар Омаров</div><div style="font-size:12px;color:#8A8175">Google Карты</div></div></div>
+    </div>
+    <div style="background:#FBF8F3;border:1px solid rgba(26,23,20,0.1);border-radius:18px;padding:26px">
+      <div style="color:#A97B3C;font-size:15px;margin-bottom:14px">★★★★★</div>
+      <p style="font-size:15px;line-height:1.6;margin:0 0 20px;color:#332E28">«Качественно и быстро. Результатом и ценой остался очень доволен. Рекомендую.»</p>
+      <div style="display:flex;align-items:center;gap:12px"><div style="width:38px;height:38px;border-radius:50%;background:#E3D8C4;display:flex;align-items:center;justify-content:center;font-weight:700;color:#8A6229">W</div><div><div style="font-size:14px;font-weight:700">Wolf Celestial</div><div style="font-size:12px;color:#8A8175">Google Карты</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section id="faq" style="max-width:900px;margin:0 auto;padding:60px 32px 88px">
+  <div style="text-align:center;margin-bottom:44px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#A97B3C;margin-bottom:14px">Частые вопросы</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:48px;line-height:1.05;margin:0">Отвечаем на главное</h2>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="6">
+      <div style="background:#FBF8F3;border:1px solid rgba(26,23,20,0.1);border-radius:16px;overflow:hidden">
+        <button onClick="{{ f.onToggle }}" style="width:100%;text-align:left;background:transparent;border:none;cursor:pointer;padding:22px 24px;display:flex;align-items:center;justify-content:between;gap:16px;justify-content:space-between">
+          <span style="font-size:16.5px;font-weight:700;color:#1A1714">{{ f.q }}</span>
+          <span style="{{ f.iconStyle }}">+</span>
+        </button>
+        <sc-if value="{{ f.open }}">
+          <div style="padding:0 24px 24px;font-size:14.5px;line-height:1.65;color:#524B41">{{ f.a }}</div>
+        </sc-if>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<!-- ===================== ЗАЯВКА ===================== -->
+<section id="zayavka" style="background:#1A1714;color:#EDE7DD">
+  <div style="max-width:1080px;margin:0 auto;padding:82px 32px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center">
+    <div>
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#A97B3C;margin-bottom:16px">Бесплатный замер</div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:44px;line-height:1.1;margin:0 0 18px">Оставьте заявку — приедем и всё рассчитаем</h2>
+      <p style="font-size:16px;line-height:1.65;color:#C4BBAC;margin:0 0 26px">Замерщик приедет в удобное время, бесплатно замерит помещение и назовёт точную цену. Никаких обязательств.</p>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;align-items:center;gap:12px;font-size:15px"><span style="width:34px;height:34px;border-radius:50%;background:rgba(169,123,60,0.18);color:#CDB88F;display:flex;align-items:center;justify-content:center;font-size:13px">✓</span>Выезд по Махачкале — бесплатно</div>
+        <div style="display:flex;align-items:center;gap:12px;font-size:15px"><span style="width:34px;height:34px;border-radius:50%;background:rgba(169,123,60,0.18);color:#CDB88F;display:flex;align-items:center;justify-content:center;font-size:13px">✓</span>Точная цена и договор на месте</div>
+        <div style="display:flex;align-items:center;gap:12px;font-size:15px"><span style="width:34px;height:34px;border-radius:50%;background:rgba(169,123,60,0.18);color:#CDB88F;display:flex;align-items:center;justify-content:center;font-size:13px">✓</span>Работаем ежедневно</div>
+      </div>
+    </div>
+    <div style="background:#232019;border:1px solid rgba(237,231,221,0.12);border-radius:22px;padding:30px">
+      <sc-if value="{{ sent }}">
+        <div style="text-align:center;padding:28px 6px">
+          <div style="width:64px;height:64px;border-radius:50%;background:#A97B3C;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:30px">✓</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;margin-bottom:8px">Заявка отправлена!</div>
+          <p style="font-size:14.5px;color:#B4AB9C;line-height:1.6;margin:0">Мы открыли для вас чат в WhatsApp с деталями расчёта. Ответим в течение рабочего дня.</p>
+        </div>
+      </sc-if>
+      <sc-if value="{{ notSent }}">
+        <div>
+          <div style="font-size:19px;font-weight:700;margin-bottom:18px;color:#fff">Запишитесь на замер</div>
+          <label style="display:block;font-size:12.5px;font-weight:600;color:#B4AB9C;margin-bottom:7px">Ваше имя</label>
+          <input type="text" value="{{ name }}" onInput="{{ onName }}" placeholder="Как к вам обращаться" style="width:100%;background:#1A1714;border:1px solid rgba(237,231,221,0.16);border-radius:12px;padding:14px 16px;color:#EDE7DD;font-size:15px;margin-bottom:16px;outline:none" />
+          <label style="display:block;font-size:12.5px;font-weight:600;color:#B4AB9C;margin-bottom:7px">Телефон</label>
+          <input type="tel" value="{{ phone }}" onInput="{{ onPhone }}" placeholder="+7 ___ ___-__-__" style="width:100%;background:#1A1714;border:1px solid rgba(237,231,221,0.16);border-radius:12px;padding:14px 16px;color:#EDE7DD;font-size:15px;margin-bottom:20px;outline:none" />
+          <button onClick="{{ submitForm }}" style="width:100%;background:#A97B3C;color:#fff;border:none;cursor:pointer;font-weight:700;font-size:15.5px;padding:16px;border-radius:100px;transition:.18s" style-hover="background:#C08E48">Заказать бесплатный замер</button>
+          <div style="text-align:center;font-size:12px;color:#8A8175;margin-top:14px">Нажимая кнопку, вы соглашаетесь на обработку данных. Заявка уходит нам в WhatsApp.</div>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== КОНТАКТЫ ===================== -->
+<section id="kontakty" style="max-width:1200px;margin:0 auto;padding:88px 32px 40px">
+  <div style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:40px;align-items:stretch">
+    <div>
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#A97B3C;margin-bottom:14px">Контакты</div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:44px;line-height:1.05;margin:0 0 30px">Приходите или звоните</h2>
+      <div style="display:flex;flex-direction:column;gap:22px">
+        <div style="display:flex;gap:14px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A97B3C" stroke-width="1.7" style="flex:none;margin-top:2px"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><div style="font-size:12px;color:#8A8175;font-weight:600;margin-bottom:3px">Адрес</div><div style="font-size:16px;font-weight:600">просп. Гамидова, 5, Махачкала</div><div style="font-size:13.5px;color:#6E675C">Ленинский район · 367013</div></div></div>
+        <div style="display:flex;gap:14px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A97B3C" stroke-width="1.7" style="flex:none;margin-top:2px"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.7 2z"/></svg><div><div style="font-size:12px;color:#8A8175;font-weight:600;margin-bottom:3px">Телефон</div><a href="tel:+79882919183" style="font-size:16px;font-weight:600;text-decoration:none">+7 988 291-91-83</a></div></div>
+        <div style="display:flex;gap:14px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A97B3C" stroke-width="1.7" style="flex:none;margin-top:2px"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><div style="font-size:12px;color:#8A8175;font-weight:600;margin-bottom:3px">Режим работы</div><div style="font-size:16px;font-weight:600">Ежедневно, 09:00–18:00</div></div></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">
+          <a href="https://wa.me/79882919183" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#A97B3C;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:12px 18px;border-radius:100px" style-hover="background:#8A6229"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg>WhatsApp</a>
+          <a href="https://yandex.ru/maps/-/CTeKZ205" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;font-weight:700;font-size:14px;padding:12px 18px;border-radius:100px;text-decoration:none;border:1.5px solid rgba(26,23,20,0.16)" style-hover="border-color:#1A1714">Яндекс Карты</a>
+          <a href="https://go.2gis.com/mZI6s" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;font-weight:700;font-size:14px;padding:12px 18px;border-radius:100px;text-decoration:none;border:1.5px solid rgba(26,23,20,0.16)" style-hover="border-color:#1A1714">2ГИС</a>
+          <a href="https://maps.app.goo.gl/9HZsPgvWprvMfRDY9" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;font-weight:700;font-size:14px;padding:12px 18px;border-radius:100px;text-decoration:none;border:1.5px solid rgba(26,23,20,0.16)" style-hover="border-color:#1A1714">Google</a>
+        </div>
+      </div>
+    </div>
+    <div style="border-radius:20px;overflow:hidden;border:1px solid rgba(26,23,20,0.1);min-height:380px">
+      <iframe title="Gosta на карте" src="https://www.openstreetmap.org/export/embed.html?bbox=47.5137%2C42.9682%2C47.5265%2C42.9742&layer=mapnik&marker=42.971184%2C47.520135" style="width:100%;height:100%;min-height:380px"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer style="border-top:1px solid rgba(26,23,20,0.1)">
+  <div style="max-width:1200px;margin:0 auto;padding:34px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+    <div style="display:flex;align-items:baseline;gap:9px">
+      <span style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:24px">GOSTA</span>
+      <span style="font-size:13px;color:#8A8175">Натяжные потолки · Махачкала</span>
+    </div>
+    <div style="font-size:13px;color:#8A8175">© {{ year }} Gosta. просп. Гамидова, 5 · +7 988 291-91-83</div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/79882919183" target="_blank" rel="noopener" title="Написать в WhatsApp" style="position:fixed;right:24px;bottom:24px;z-index:70;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(37,211,102,0.45);text-decoration:none;transition:.2s" style-hover="transform:scale(1.08)">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.13.1-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.15-.19-1.19-1.58-1.19-3.02 0-1.43.75-2.14 1.02-2.43.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.83 2.01.9 2.16.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.28-.12.56.16.29.72 1.18 1.54 1.91 1.06.95 1.95 1.24 2.24 1.38.29.14.45.12.62-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.68-.17 1.36z"/></svg>
+</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:960},&quot;priceMatte&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:1000,&quot;unit&quot;:&quot;₽/м²&quot;,&quot;section&quot;:&quot;Цены калькулятора&quot;,&quot;tsType&quot;:&quot;number&quot;},&quot;priceSatin&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:1250,&quot;unit&quot;:&quot;₽/м²&quot;,&quot;section&quot;:&quot;Цены калькулятора&quot;,&quot;tsType&quot;:&quot;number&quot;},&quot;priceGlossy&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:1450,&quot;unit&quot;:&quot;₽/м²&quot;,&quot;section&quot;:&quot;Цены калькулятора&quot;,&quot;tsType&quot;:&quot;number&quot;},&quot;pricePhoto&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:2600,&quot;unit&quot;:&quot;₽/м²&quot;,&quot;section&quot;:&quot;Цены калькулятора&quot;,&quot;tsType&quot;:&quot;number&quot;},&quot;priceLight&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:350,&quot;unit&quot;:&quot;₽/шт&quot;,&quot;section&quot;:&quot;Цены калькулятора&quot;,&quot;tsType&quot;:&quot;number&quot;},&quot;whatsapp&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;79882919183&quot;,&quot;section&quot;:&quot;Контакты&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { area: 20, type: 'matte', lights: 6, chandelier: 1, pipes: 0, niche: 0, levels: 1, openFaq: 0, name: '', phone: '', sent: false };
+
+  NAMES = { matte: 'Матовое', satin: 'Сатиновое', glossy: 'Глянцевое', photo: 'Фотопечать' };
+
+  IMAGES = {
+    'gosta-hero': 'https://t4.ftcdn.net/jpg/00/93/67/43/1000_F_93674310_U9PYYS8BRWTFKhiR6kYLSqKVQw5nlzV5.jpg',
+    'gosta-g1': 'https://t4.ftcdn.net/jpg/03/74/66/21/1000_F_374662176_Q04a7OHHFE2pYTyLKESyET7lxmEV7WHN.jpg',
+    'gosta-g2': 'https://t3.ftcdn.net/jpg/03/72/40/40/1000_F_372404058_N4XsJtMQuORsoOLNGTvXPxYMObQrjQ0x.jpg',
+    'gosta-g3': 'https://t4.ftcdn.net/jpg/03/07/61/03/1000_F_307610378_ZJVCiTE15Y3KxbfWmFD4YantEYYi3dxT.jpg',
+    'gosta-g4': 'https://t4.ftcdn.net/jpg/04/03/01/55/1000_F_403015545_KiULyHIB7W8tAKbFfw3xVJ6st2q2wSC7.jpg',
+    'gosta-g5': 'https://t4.ftcdn.net/jpg/05/31/68/47/1000_F_531684784_zaT8et5N5cuvoY0RpWMMK9WfOLVwKpDr.jpg',
+    'gosta-g6': 'https://t3.ftcdn.net/jpg/04/92/44/52/1000_F_492445295_ruHE9wAI9L2UAEOPHa7LbJe38kQEthFz.jpg',
+  };
+
+  componentDidMount() { this.applyImages(0); }
+
+  applyImages(tries) {
+    let missing = false;
+    Object.keys(this.IMAGES).forEach(id => {
+      const el = document.getElementById(id);
+      if (!el) { missing = true; return; }
+      if (!el.getAttribute('src')) el.setAttribute('src', this.IMAGES[id]);
+    });
+    if (missing && tries < 20) setTimeout(() => this.applyImages(tries + 1), 150);
+  }
+
+  prices() {
+    return {
+      matte: this.props.priceMatte ?? 1000,
+      satin: this.props.priceSatin ?? 1250,
+      glossy: this.props.priceGlossy ?? 1450,
+      photo: this.props.pricePhoto ?? 2600,
+      light: this.props.priceLight ?? 350,
+    };
+  }
+
+  fmt(n) { return Math.round(n).toLocaleString('ru-RU'); }
+
+  bump(k, d, min, max) {
+    this.setState(st => ({ [k]: Math.max(min, Math.min(max, st[k] + d)) }));
+  }
+
+  onAreaInput = (e) => {
+    let v = Math.round(parseFloat(e.target.value));
+    if (!isFinite(v)) v = 5;
+    this.setState({ area: Math.max(1, Math.min(500, v)) });
+  };
+
+  calc() {
+    const st = this.state, P = this.prices();
+    const per = P[st.type];
+    const lvl = st.levels === 2 ? 1.5 : 1;
+    const base = st.area * per * lvl;
+    const lights = st.lights * P.light;
+    const chand = st.chandelier * 500;
+    const pipes = st.pipes * 400;
+    const niche = st.niche * 800;
+    return { per, base, lights, chand, pipes, niche, total: base + lights + chand + pipes + niche };
+  }
+
+  wa(text) {
+    const num = this.props.whatsapp ?? '79882919183';
+    return 'https://wa.me/' + num + (text ? '?text=' + encodeURIComponent(text) : '');
+  }
+
+  submitForm = (e) => {
+    if (e && e.preventDefault) e.preventDefault();
+    const st = this.state;
+    if (!st.phone.trim()) return;
+    const c = this.calc();
+    const t = 'Здравствуйте! Заявка на бесплатный замер с сайта Gosta.\n' +
+      'Имя: ' + (st.name || '—') + '\n' +
+      'Телефон: ' + st.phone + '\n' +
+      'Расчёт: ' + st.area + ' м², ' + this.NAMES[st.type] + ', предварительно от ' + this.fmt(c.total) + ' ₽.';
+    window.open(this.wa(t), '_blank');
+    this.setState({ sent: true });
+  };
+
+  FAQS = [
+    { q: 'За сколько времени устанавливают потолок?', a: 'Один стандартный потолок монтируем за 3–4 часа, всю квартиру — обычно за один день. Работаем чисто, без пыли и мусора.' },
+    { q: 'Даёте ли гарантию?', a: 'Да, официальная гарантия 15 лет на полотно и монтаж. Гарантийные случаи устраняем бесплатно.' },
+    { q: 'Потолок выдержит затопление сверху?', a: 'Да. ПВХ-полотно удерживает воду — до 100 литров на м². Мы аккуратно сольём воду и вернём потолку исходный вид.' },
+    { q: 'Можно ли выбрать цвет и фактуру?', a: 'Более 150 оттенков: матовые, сатиновые и глянцевые полотна, а также фотопечать любого изображения в высоком разрешении.' },
+    { q: 'Замер действительно бесплатный?', a: 'Да. Замерщик приедет бесплатно в удобное время, рассчитает точную стоимость и учтёт все нюансы помещения. Без обязательств.' },
+    { q: 'Сколько прослужит потолок?', a: 'Срок службы качественного ПВХ-полотна — более 20 лет. Оно не желтеет, не трескается и не собирает пыль.' },
+  ];
+
+  renderVals() {
+    const st = this.state, c = this.calc(), P = this.prices();
+
+    const types = ['matte', 'satin', 'glossy', 'photo'].map(k => ({
+      key: k,
+      name: this.NAMES[k],
+      price: 'от ' + this.fmt(P[k]) + ' ₽/м²',
+      active: st.type === k,
+      onClick: () => this.setState({ type: k }),
+    }));
+
+    const segBase = 'border:none;cursor:pointer;font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:100px;transition:.16s;';
+    const segOn = segBase + 'background:#1A1714;color:#F2EEE7;';
+    const segOff = segBase + 'background:transparent;color:#6E675C;';
+
+    const faqs = this.FAQS.map((f, i) => ({
+      q: f.q,
+      a: f.a,
+      open: st.openFaq === i,
+      onToggle: () => this.setState(s => ({ openFaq: s.openFaq === i ? -1 : i })),
+      iconStyle: 'flex:none;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:400;transition:.2s;color:#A97B3C;background:rgba(169,123,60,0.12);transform:rotate(' + (st.openFaq === i ? '45deg' : '0deg') + ')',
+    }));
+
+    return {
+      area: st.area, type: st.type, lights: st.lights, chandelier: st.chandelier, pipes: st.pipes, niche: st.niche,
+      onArea: this.onAreaInput,
+      incLights: () => this.bump('lights', 1, 0, 80), decLights: () => this.bump('lights', -1, 0, 80),
+      incChand: () => this.bump('chandelier', 1, 0, 10), decChand: () => this.bump('chandelier', -1, 0, 10),
+      incPipes: () => this.bump('pipes', 1, 0, 20), decPipes: () => this.bump('pipes', -1, 0, 20),
+      incNiche: () => this.bump('niche', 1, 0, 40), decNiche: () => this.bump('niche', -1, 0, 40),
+      setLevel1: () => this.setState({ levels: 1 }), setLevel2: () => this.setState({ levels: 2 }),
+      lvl1Style: st.levels === 1 ? segOn : segOff,
+      lvl2Style: st.levels === 2 ? segOn : segOff,
+      types,
+      totalStr: this.fmt(c.total),
+      perM2Str: this.fmt(c.total / Math.max(1, st.area)),
+      typeName: this.NAMES[st.type],
+      lvlNote: st.levels === 2 ? ' · 2 уровня' : '',
+      baseStr: this.fmt(c.base),
+      lightsStr: this.fmt(c.lights), chandStr: this.fmt(c.chand), pipesStr: this.fmt(c.pipes), nicheStr: this.fmt(c.niche),
+      hasLights: st.lights > 0, hasChand: st.chandelier > 0, hasPipes: st.pipes > 0, hasNiche: st.niche > 0,
+      waCalc: this.wa('Здравствуйте! Рассчитал на сайте Gosta: ' + st.area + ' м², ' + this.NAMES[st.type] + ', светильников ' + st.lights + '. Предварительно от ' + this.fmt(c.total) + ' ₽. Хочу уточнить стоимость и записаться на замер.'),
+      pMatte: this.fmt(P.matte), pSatin: this.fmt(P.satin), pGlossy: this.fmt(P.glossy), pPhoto: this.fmt(P.photo),
+      faqs,
+      name: st.name, phone: st.phone,
+      onName: (e) => this.setState({ name: e.target.value }),
+      onPhone: (e) => this.setState({ phone: e.target.value }),
+      submitForm: this.submitForm,
+      sent: st.sent, notSent: !st.sent,
+      year: new Date().getFullYear(),
+    };
+  }
+}
+</script>
+</body>
+</html>
