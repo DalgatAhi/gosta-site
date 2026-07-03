@@ -11,7 +11,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="./image-slot.js"></script>
 <style>
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -20,7 +19,6 @@
   a{color:inherit}
   input,button,textarea{font-family:inherit}
   iframe{border:0}
-  image-slot{display:block}
   @keyframes gShine{0%{transform:translateX(-120%)}60%,100%{transform:translateX(220%)}}
 </style>
 </helmet>
@@ -73,7 +71,7 @@
     </div>
   </div>
   <div style="position:relative">
-    <image-slot id="gosta-hero" style="width:100%;height:520px" shape="rounded" radius="22" src="https://t4.ftcdn.net/jpg/00/93/67/43/1000_F_93674310_U9PYYS8BRWTFKhiR6kYLSqKVQw5nlzV5.jpg" placeholder="Перетащите сюда фото готового потолка"></image-slot>
+    <img src="./images/hero.jpg" alt="Готовый натяжной потолок" style="width:100%;height:520px;object-fit:cover;border-radius:22px;display:block" />
     <div style="position:absolute;left:-22px;bottom:34px;background:#F2EEE7;border:1px solid rgba(26,23,20,0.1);border-radius:16px;padding:16px 20px;box-shadow:0 18px 40px rgba(26,23,20,0.14);display:flex;align-items:center;gap:14px">
       <div style="width:44px;height:44px;border-radius:12px;background:#A97B3C;color:#fff;display:flex;align-items:center;justify-content:center">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
@@ -263,12 +261,12 @@
     <p style="font-size:15px;color:#524B41;line-height:1.55;margin:0">Перетащите свои фото в любую ячейку — они сохранятся. Ниже подписи-подсказки, что показать.</p>
   </div>
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
-    <div><image-slot id="gosta-g1" style="width:100%;height:250px" shape="rounded" radius="16" src="https://t4.ftcdn.net/jpg/03/74/66/21/1000_F_374662176_Q04a7OHHFE2pYTyLKESyET7lxmEV7WHN.jpg" placeholder="Глянцевый потолок в гостиной"></image-slot><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Глянцевый · гостиная</div></div>
-    <div><image-slot id="gosta-g2" style="width:100%;height:250px" shape="rounded" radius="16" src="https://t3.ftcdn.net/jpg/03/72/40/40/1000_F_372404058_N4XsJtMQuORsoOLNGTvXPxYMObQrjQ0x.jpg" placeholder="Матовый потолок в спальне"></image-slot><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Матовый · спальня</div></div>
-    <div><image-slot id="gosta-g3" style="width:100%;height:250px" shape="rounded" radius="16" src="https://t4.ftcdn.net/jpg/03/07/61/03/1000_F_307610378_ZJVCiTE15Y3KxbfWmFD4YantEYYi3dxT.jpg" placeholder="Звёздное небо с подсветкой"></image-slot><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Звёздное небо · детская</div></div>
-    <div><image-slot id="gosta-g4" style="width:100%;height:250px" shape="rounded" radius="16" src="https://t4.ftcdn.net/jpg/04/03/01/55/1000_F_403015545_KiULyHIB7W8tAKbFfw3xVJ6st2q2wSC7.jpg" placeholder="Двухуровневый потолок"></image-slot><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Двухуровневый · зал</div></div>
-    <div><image-slot id="gosta-g5" style="width:100%;height:250px" shape="rounded" radius="16" src="https://t4.ftcdn.net/jpg/05/31/68/47/1000_F_531684784_zaT8et5N5cuvoY0RpWMMK9WfOLVwKpDr.jpg" placeholder="Парящий потолок с LED-подсветкой"></image-slot><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Парящий потолок · LED</div></div>
-    <div><image-slot id="gosta-g6" style="width:100%;height:250px" shape="rounded" radius="16" src="https://t3.ftcdn.net/jpg/04/92/44/52/1000_F_492445295_ruHE9wAI9L2UAEOPHa7LbJe38kQEthFz.jpg" placeholder="Фотопечать на потолке"></image-slot><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Фотопечать · кухня</div></div>
+    <div><img src="./images/glossy-living.jpg" alt="Глянцевый потолок в гостиной" style="width:100%;height:250px;object-fit:cover;border-radius:16px;display:block" /><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Глянцевый · гостиная</div></div>
+    <div><img src="./images/matte-bedroom.jpg" alt="Матовый потолок в спальне" style="width:100%;height:250px;object-fit:cover;border-radius:16px;display:block" /><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Матовый · спальня</div></div>
+    <div><img src="./images/kids-room.jpg" alt="Звёздное небо с подсветкой" style="width:100%;height:250px;object-fit:cover;border-radius:16px;display:block" /><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Звёздное небо · детская</div></div>
+    <div><img src="./images/two-level-ceiling.jpg" alt="Двухуровневый потолок" style="width:100%;height:250px;object-fit:cover;border-radius:16px;display:block" /><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Двухуровневый · зал</div></div>
+    <div><img src="./images/led-ceiling.jpg" alt="Парящий потолок с LED-подсветкой" style="width:100%;height:250px;object-fit:cover;border-radius:16px;display:block" /><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Парящий потолок · LED</div></div>
+    <div><img src="./images/kitchen.jpg" alt="Фотопечать на потолке" style="width:100%;height:250px;object-fit:cover;border-radius:16px;display:block" /><div style="font-size:13px;font-weight:600;color:#524B41;margin-top:10px">Фотопечать · кухня</div></div>
   </div>
 </section>
 
@@ -423,28 +421,6 @@ class Component extends DCLogic {
   state = { area: 20, type: 'matte', lights: 6, chandelier: 1, pipes: 0, niche: 0, levels: 1, openFaq: 0, name: '', phone: '', sent: false };
 
   NAMES = { matte: 'Матовое', satin: 'Сатиновое', glossy: 'Глянцевое', photo: 'Фотопечать' };
-
-  IMAGES = {
-    'gosta-hero': 'https://t4.ftcdn.net/jpg/00/93/67/43/1000_F_93674310_U9PYYS8BRWTFKhiR6kYLSqKVQw5nlzV5.jpg',
-    'gosta-g1': 'https://t4.ftcdn.net/jpg/03/74/66/21/1000_F_374662176_Q04a7OHHFE2pYTyLKESyET7lxmEV7WHN.jpg',
-    'gosta-g2': 'https://t3.ftcdn.net/jpg/03/72/40/40/1000_F_372404058_N4XsJtMQuORsoOLNGTvXPxYMObQrjQ0x.jpg',
-    'gosta-g3': 'https://t4.ftcdn.net/jpg/03/07/61/03/1000_F_307610378_ZJVCiTE15Y3KxbfWmFD4YantEYYi3dxT.jpg',
-    'gosta-g4': 'https://t4.ftcdn.net/jpg/04/03/01/55/1000_F_403015545_KiULyHIB7W8tAKbFfw3xVJ6st2q2wSC7.jpg',
-    'gosta-g5': 'https://t4.ftcdn.net/jpg/05/31/68/47/1000_F_531684784_zaT8et5N5cuvoY0RpWMMK9WfOLVwKpDr.jpg',
-    'gosta-g6': 'https://t3.ftcdn.net/jpg/04/92/44/52/1000_F_492445295_ruHE9wAI9L2UAEOPHa7LbJe38kQEthFz.jpg',
-  };
-
-  componentDidMount() { this.applyImages(0); }
-
-  applyImages(tries) {
-    let missing = false;
-    Object.keys(this.IMAGES).forEach(id => {
-      const el = document.getElementById(id);
-      if (!el) { missing = true; return; }
-      if (!el.getAttribute('src')) el.setAttribute('src', this.IMAGES[id]);
-    });
-    if (missing && tries < 20) setTimeout(() => this.applyImages(tries + 1), 150);
-  }
 
   prices() {
     return {
